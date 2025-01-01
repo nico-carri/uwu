@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YUGEN STORE | Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+  <header>
+      <div class="header-logo">
+        <img src="../imagenes/logo/yuge-logo.jpeg" alt="Logo de Yugen Store" class="logo">
+        <h1>YUGEN STORE</h1>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light mx-auto">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <a class="nav-link" href="/index.html">Inicio</a>
+            <a class="nav-link" href="/paginas/pagina-productos.html">Productos</a>
+            <a class="nav-link" href="/paginas/pagina-ofertas.html">Ofertas</a>
+            <a class="nav-link" href="/paginas/pagina-nosotros.html">Sobre Nosotros</a>
+            <a class="nav-link active" href="/paginas/pagina-contactos.html">Contacto</a>
+        </div>
+    </nav>
+  </header>
+  <section id="contacto">
+    <h2>¡Comunicate con nosotros!</h2>
+    <form id="formulario-contacto">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" required>
+        <span id="error-name" class="error-message"></span>
+
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" required>
+        <span id="error-email" class="error-message"></span>
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" required></textarea>
+        <span id="error-message" class="error-message"></span>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <p id="form-success" class="success-message" style="display: none;">¡Gracias por tu mensaje! Lo procesaremos pronto.</p>
+</section>
+  <footer>
+    <p>&copy; 2024 Yugen Store. Todos los derechos reservados.</p>
+  </footer>
+  <script src="/js/login.js"></script>
+  </body>
+</html>

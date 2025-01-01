@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YUGEN STORE | Ofertas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <header class= "header-menu-logo"> 
+      <div class="header-logo">
+          <img src="../imagenes/logo/yuge-logo.jpeg" alt="Logo de Yugen Store" class="logo">
+          <h1>YUGEN STORE</h1>
+      </div>
+  <nav class="navbar navbar-expand-lg navbar-light mx-auto">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <a class="nav-link" href="/index.html">Inicio</a>
+            <a class="nav-link" href="/paginas/pagina-productos.html">Productos</a>
+            <a class="nav-link active" href="/paginas/pagina-ofertas.html">Ofertas</a>
+            <a class="nav-link" href="/paginas/pagina-nosotros.html">Sobre Nosotros</a>
+            <a class="nav-link" href="/paginas/pagina-contactos.html">Contacto</a>
+        </div>
+    </nav>
+  </header>
+  <main>
+    <h2>Ofertas</h2>
+    <section class="productos-oferta"></section>
+
+    <div class="carrito-icono">
+      <img src="/imagenes/carrito.png" alt="Carrito" id="abrir-carrito">
+      <span id="contador-productos">0</span> 
+  </div>
+  
+  <div class="carrito-modal" id="carrito-modal">
+      <div class="carrito-modal-content">
+          <span id="cerrar-carrito">&times;</span>
+          <h2>Carrito de compras</h2>
+          <ul id="lista-carrito">
+          </ul>
+          <p>Total: $<span id="total">0</span></p>
+          <button id="vaciar-carrito">Vaciar carrito</button>
+      </div>
+  </div>
+  
+  <script src="/js/productos.js"></script>
+      
+
+  </main>
+    <footer>
+      <p>&copy; 2024 Yugen Store. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda E-commerce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="/imagenes/logo/yuge-logo.jpeg" alt="Logo de Yugen Store" class="logo">
+            <h1>YUGEN STORE</h1>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light mx-auto">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <a class="nav-link active" href="#home">Inicio</a>
+                <a class="nav-link" href="paginas/pagina-productos.html">Productos</a>
+                <a class="nav-link" href="paginas/pagina-ofertas.html">Ofertas</a>
+                <a class="nav-link" href="paginas/pagina-nosotros.html">Sobre Nosotros</a>
+                <a class="nav-link" href="paginas/pagina-contactos.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Bienvenido a nuestra tienda</h2>
+            <p>Descripción breve de la tienda.</p>
+        </section>
+        <section id="reseñas">
+            <h3>Reseñas de Clientes</h3>
+            <div class="carrusel">
+                <div class="ventana-reseñas">
+                    <div class="tarjetas-reseñas">
+                        <div class="tarjeta-reseña">
+                            <img src="../imagenes/iconos/persona1.jpg" alt="Foto de cliente" class="reseña-imagen">
+                            <div class="reseña-estrellas">⭐⭐⭐⭐⭐</div>
+                            <p class="reseña-texto">¡Excelente calidad y atención! 100% recomendado.</p>
+                        </div>
+                        <div class="tarjeta-reseña">
+                            <img src="../imagenes/iconos/persona2.jpg" alt="Foto de cliente" class="reseña-imagen">
+                            <div class="reseña-estrellas">⭐⭐⭐⭐</div>
+                            <p class="reseña-texto">Los productos llegaron rápido, me encantaron.</p>
+                        </div>
+                        <div class="tarjeta-reseña">
+                            <img src="../imagenes/iconos/persona3.jpg" alt="Foto de cliente" class="reseña-imagen">
+                            <div class="reseña-estrellas">⭐⭐⭐⭐⭐</div>
+                            <p class="reseña-texto">Muy buena experiencia de compra, repetiré pronto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Yugen Store. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/carrito.js"></script>
+</body>
+</html>

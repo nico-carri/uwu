@@ -1,0 +1,509 @@
+/*Estilos generales*/
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background-color: bisque;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    color: #892525;
+    background-color: #201f1f;
+    padding: 20px 0;
+    position: relative;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+main {
+    flex: 1;  
+    padding: 20px;
+    box-sizing: border-box;  
+}
+section {
+    flex: 1; 
+}
+
+footer {
+    background-color: #201f1f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px
+}
+
+h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-style: italic;         
+    text-decoration: underline;      
+}
+
+/*Estilos logo*/
+.header-logo {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;  
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;  
+}
+/*Estilo menu pricipal*/
+
+.navbar {
+    background-color: #201f1f;  
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    text-decoration: underline;  
+    color: #892525;  
+}
+
+.navbar-brand {
+    color: #892525;  
+    font-size: 24px;  
+}
+
+.navbar-toggler-icon {
+    background-color: #892525;  
+}
+
+.navbar-nav {
+    margin-left: auto; 
+    
+}
+
+.navbar-collapse {
+    justify-content: center; 
+    background-color: #201f1f;
+    border: none;
+}
+
+
+.nav-link {
+    color: #ffffff; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-transform: uppercase;
+    padding: 10px 15px; 
+    text-decoration: none; 
+    transition: color 0.3s ease-in-out; 
+}
+
+.nav-link:hover {
+    color: #892525; 
+    text-decoration: underline; 
+}
+
+.nav-link.active {
+    color: #892525; 
+    border-bottom: 2px solid #ffd700; 
+}
+
+.navbar, .nav-link {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Sección de productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center;
+}
+
+.productos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contenedor-flexible {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center;
+    margin: 0 auto; 
+    padding: 10px;
+}
+
+.producto-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+}
+
+/* Tarjetas individuales */
+.producto-caja {
+    flex: 1 1 200px;
+    width: 200px;
+    padding: 15px;    
+    max-width: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    font-family: Oswald;
+    font-size: 16px;
+    text-align: center;
+}
+/*estilo para ofertas*/
+.productos-oferta {
+    display: flex;  
+    flex-wrap: wrap;  
+    gap: 20px;  
+    justify-content: center;  
+    margin: 0 auto;  
+    padding: 10px;  
+}
+
+/* Efecto al pasar el mouse */
+.producto-caja:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen del producto */
+.producto-imagen {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Mantén el tamaño máximo */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Nombre del producto */
+.producto-nombre {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Precio del producto */
+.producto-precio {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+/* Descripción del producto */
+.producto-descripcion {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Botón de agregar al carrito */
+.add-carrito {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.add-carrito:hover {
+    background-color: #45a049;
+}
+
+
+
+/*Estilo reseña*/
+.estrella {
+    color: gold;
+    font-size: 20px;
+}
+.estrella:hover {
+    color: orange;
+}
+
+/* Estilos para el ícono flotante del carrito*/
+.carrito-icono {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.carrito-icono img {
+    width: 24px;  
+    height: 24px; 
+}
+
+#contador-productos {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+/* Estilos para la ventana modal del carrito*/
+.carrito-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);  
+    z-index: 1000;
+}
+
+.carrito-modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#cerrar-carrito {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/*Estilo reseñas*/
+#reseñas {
+    margin: 40px auto;
+    max-width: 1200px;
+    text-align: center;
+    padding: 20px;
+}
+
+#reseñas h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.tarjetas-reseñas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.tarjeta-reseña {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center;
+    flex: 0 0 33.33%;  
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.tarjeta-reseña:hover {
+    transform: scale(1.05);
+}
+
+.reseña-imagen {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.reseña-estrellas {
+    color: gold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.reseña-texto {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.carrusel {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ventana-reseñas {
+    overflow: hidden;  
+    width: 90%;  
+}
+
+
+/* Estilo general del formulario de contacto */
+#contacto {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los elementos */
+}
+
+form label {
+    font-size: 16px;
+    text-align: left;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Asegura que padding no afecte el ancho total */
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+
+/* Estilo para pantallas grandes (Desktop) */
+@media (min-width: 768px) {
+    #contacto {
+        max-width: 800px;
+        padding: 40px;
+    }
+
+    form {
+        flex-direction: row; /* Cambia a diseño horizontal */
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    form label {
+        flex-basis: 100%; /* Ocupa toda la fila */
+    }
+
+    form input,
+    form textarea {
+        flex: 1 1 calc(48% - 10px); /* Ajusta ancho y deja espacio entre elementos */
+    }
+
+    form textarea {
+        flex: 1 1 100%; /* Ocupa toda la fila */
+    }
+
+    form button {
+        flex: 1 1 100%; /* Ocupa toda la fila */
+    }
+}
+
+/* Estilo para pantallas pequeñas (Mobile) */
+@media (max-width: 480px) {
+    #contacto h2 {
+        font-size: 20px;
+    }
+
+    form {
+        gap: 10px; 
+    }
+
+    form input,
+    form textarea,
+    form button {
+        font-size: 14px;
+        padding: 8px; 
+    }
+}
+
+
+
+/**/
+@media (max-width: 768px) {
+    .caja {
+        flex: 1 1 calc(50% - 20px);  
+    }
+}
+
+@media (max-width: 480px) {
+    .caja {
+        flex: 1 1 100%;  
+    }
+}
+
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .menu li {
+        margin: 10px 0;
+    }
+}
