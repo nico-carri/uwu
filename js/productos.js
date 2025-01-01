@@ -59,3 +59,32 @@ const productosOferta = [
       imagen: "../imagenes/productos/ofertas/taza-Demon-Slayer.jpg"
   }
 ];
+
+const contenedorProductos = document.querySelector("#productos");
+const contenedorOfertas = document.querySelector(".productos-oferta");
+
+
+function renderizarProductos(productos, contenedor) {
+    if (!contenedor) return; 
+    productos.forEach(producto => {
+        const productoHTML = `
+            <div class="producto">
+                <img src="/uwu/${producto.imagen}" alt="${producto.nombre}">
+                <h3>${producto.nombre}</h3>
+                <p>${producto.descripcion}</p>
+                <p>Precio: $${producto.precio}</p>
+                <button class="btn-agregar" data-id="${producto.id}">Agregar al carrito</button>
+            </div>
+        `;
+        contenedor.innerHTML += productoHTML;
+    });
+}
+
+
+if (contenedorProductos) {
+    renderizarProductos(productos, contenedorProductos);
+}
+
+if (contenedorOfertas) {
+    renderizarProductos(productosOferta, contenedorOfertas);
+}
