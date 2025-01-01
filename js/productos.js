@@ -6,7 +6,7 @@ const productos = [
       descripcion: "Buzo HUNTER X HUNTER",
       imagen: "../imagenes/productos/buzos/buzo-HxH.jpg"
   },
-  {pp
+  {
       id: 2,
       nombre: "Buzo My Hero Academia",
       precio: 25000,
