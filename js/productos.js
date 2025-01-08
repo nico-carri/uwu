@@ -61,7 +61,7 @@ const productosOferta = [
 ];
 
 const contenedorProductos = document.querySelector("#productos");
-const contenedorOfertas = document.querySelector(".productos-container-ofertas");
+const contenedorOfertas = document.querySelector(".productos-ofertas");
 
 function renderizarProductos(productos, contenedor) {
     if (!contenedor) return;
